@@ -7,14 +7,14 @@ public class DFS {
 		GrafoDinamic grafoDFS = new GrafoDinamic();
 		grafoDFS.inicializarGrafo(10);
 		
-		// Agregamos los vértices del Grafo
+		// Agregamos los vertices del Grafo
 		grafoDFS.agregarVertice(1);
 		grafoDFS.agregarVertice(2);
 		grafoDFS.agregarVertice(3);
 		grafoDFS.agregarVertice(4);
 		grafoDFS.agregarVertice(5);
 		grafoDFS.agregarVertice(6);
-		// Agregamos las arístas del Grafo
+		// Agregamos las aristas del Grafo
 		grafoDFS.agregarArista(1, 2, 1);
 		grafoDFS.agregarArista(1, 3, 1);
 		grafoDFS.agregarArista(1, 4, 1);
