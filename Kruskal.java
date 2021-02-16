@@ -3,54 +3,39 @@ package TP_Progra3;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//
-public class Principal {
+
+public class Kruskal {
 
 	public static void main(String[] args) {
 		GrafoDinamic grafo = new GrafoDinamic();
 		grafo.inicializarGrafo(10);
-		/*grafo.agregarVertice(12);
-		grafo.agregarVertice(5);
-		grafo.agregarVertice(3);
-		grafo.agregarVertice(8);
-		grafo.agregarArista(12, 5, 1);
-		grafo.agregarArista(3, 12, 102);
-		grafo.agregarArista(8, 12, 14);
-		grafo.agregarArista(8, 3, 29 );
-		grafo.agregarVertice(18);
-		grafo.agregarVertice(19);
-		grafo.agregarArista(19, 18, 12);
-		grafo.agregarArista(18,8, 25);
-		grafo.agregarArista(18, 8, 19);
-		grafo.agregarArista(5,18, 9 );*/
-		//grafo.mostrarMatriz();
-		grafo.agregarVertice(1);
-		grafo.agregarVertice(2);
-		grafo.agregarVertice(3);
-		grafo.agregarVertice(4);
-		grafo.agregarVertice(5);
-		
-		grafo.agregarArista(1 , 2 , 3);
-		grafo.agregarArista(1 , 3 , 9);
-		grafo.agregarArista(1 , 5 , 99);
-		grafo.agregarArista(2 , 3 , 14);
-		grafo.agregarArista(4 , 1 , 8);
-		grafo.agregarArista(1 , 4 , 20);
-		grafo.agregarArista(5 , 4 , 24);
+	    grafo.agregarVertice(1);
+        grafo.agregarVertice(2);
+        grafo.agregarVertice(3);
+        grafo.agregarVertice(4);
+        grafo.agregarVertice(5);
+        grafo.agregarVertice(6);
+
+
+
+        grafo.agregarArista(1 , 3 , 1);
+        grafo.agregarArista(1 , 4 , 5);
+        grafo.agregarArista(1 , 2 , 6);
+        grafo.agregarArista(2 , 3 , 1);
+        grafo.agregarArista(2 , 5 , 3);
+        grafo.agregarArista(5 , 3 , 6);
+        grafo.agregarArista(5 , 6 , 6);
+        grafo.agregarArista(6 , 3 , 4);
+        grafo.agregarArista(4 , 6 , 2);
+        grafo.agregarArista(3 , 6 , 1);
 		grafo.mostrarMatriz();
 		System.out.println("=========");
-		prim(grafo.nodo).mostrarMatriz();
-		//kruskal(grafo).mostrarMatriz();
+		
+		
+		kruskal(grafo).mostrarMatriz();
 		
 		
 	}
-	
-	
-	public static ArrayList<Integer> dfsGrafo(GrafoDinamic grafo) {
-		ArrayList<Integer> nodos = new ArrayList<Integer>();
-		visitarNodo(grafo.nodo, nodos);
-		return nodos;
-	} 
 	
 	public static void visitarNodo(NodoGrafo nodo, ArrayList<Integer> lista ) {
 		nodo.Visitado = true;
@@ -66,12 +51,6 @@ public class Principal {
 		}
 		lista.add(nodo.valor);
 	}
-	
-	public static ArrayList<Integer> bfsGrafo(GrafoDinamic grafo) {
-		ArrayList<Integer> nodos = new ArrayList<Integer>();
-		visitarNodobfs(grafo.nodo, nodos);
-		return nodos;
-	} 
 	
 	public static void visitarNodobfs(NodoGrafo nodo, ArrayList<Integer> lista) {
 		NodoArista aux = nodo.lista;
@@ -189,4 +168,8 @@ public class Principal {
 			System.out.print( aristas.get(i).peso + "\t");
 		}
 	}
-}
+}	
+	
+	
+
+
