@@ -1,5 +1,5 @@
 package TP_Progra3;
-
+//
 public class ImplemEstatica implements GrafosTDA {
 	
 	int indice ;
