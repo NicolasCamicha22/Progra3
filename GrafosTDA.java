@@ -1,5 +1,5 @@
 package TP_Progra3;
-//
+
 public interface GrafosTDA {
 	
 	public void inicializarGrafo(int dim);
