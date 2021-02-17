@@ -32,7 +32,6 @@ public class Kruskal {
 		System.out.println("=========");
 		
 		
-		//kruskal(grafo).mostrarMatriz();
 		kruskal(grafo).ImprimirKruskal();
 		
 		
@@ -57,26 +56,23 @@ public class Kruskal {
 		NodoArista aux = nodo.lista;
 		if(!nodo.Visitado) {
 				nodo.Visitado = true;
-				//System.out.println(nodo.valor);
 				lista.add(nodo.valor);
 		}
 		while(aux != null) {
 			if(!aux.apunta.Visitado) {
 				aux.apunta.Visitado = true;
-				//System.out.println(aux.apunta.valor);
 				lista.add(aux.apunta.valor);
 				}
 			aux = aux.sig;
 		}
 		aux = nodo.lista;
 		while (aux != null) {
-			//System.out.println(aux.apunta.valor);
 			if(!aux.Visitado) {
 				aux.Visitado = true;
 				visitarNodobfs(aux.apunta, lista);
 				}
 			aux = aux.sig;
-				//System.out.println(aux.apunta.valor);
+			
 		}
 				
 	}
@@ -147,13 +143,10 @@ public class Kruskal {
 			aux = aux.sig;
 		}
 		aristas.sort(null);
-		//mostrarAristas(aristas);
 		for(int i = 0; i < aristas.size(); i++) {
-			//System.out.println(i);
 			if(!(aristas.get(i).apunta.Visitado && grafo.encontrarNodo(aristas.get(i).origen).Visitado)){
 					kruskal.agregarVertice(aristas.get(i).origen);
 					grafo.encontrarNodo(aristas.get(i).origen).Visitado = true;
-					//System.out.println(i);
 					kruskal.agregarVertice(aristas.get(i).apunta.valor);
 					aristas.get(i).apunta.Visitado = true;
 					kruskal.agregarArista(aristas.get(i).origen, aristas.get(i).apunta.valor, aristas.get(i).peso);
