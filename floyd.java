@@ -20,15 +20,15 @@ public class floyd{
         
   
         pre = new int[vector.length][vector.length];
-        //Initializamos la matriz
+        //Inicializamos la matriz
         for (int i = 0; i < vector.length; i++) {
             Arrays.fill(pre[i], i);
         }
         
         floyd(matriz, pre);
 		Scanner scan = new Scanner(System.in);
-	    System.out.println("1 - Mostar un vértice determinado ");
-	    System.out.println("2 - Mostrar Todos los vértices ");
+	    System.out.println("1 - Mostar un vertice determinado ");
+	    System.out.println("2 - Mostrar Todos los vertices ");
 	    System.out.println("Ingreso Opcion: ");
 	    int opcion = scan.nextInt();
 	    
@@ -62,7 +62,7 @@ public class floyd{
 
     public static void mostarTodosLosVertice(int[][] dis, int[][] pre, int[] vector){
     for (int k = 0; k < dis.length; k++) {
-        System.out.println("Esta viendo el vértice " + vector[k]);
+        System.out.println("Esta viendo el vertice " + vector[k]);
         for (int i = 0; i < dis.length; i++) {
             		System.out.println(" <" + vector[k] + "," + vector[i] + "> => " + dis[k][i]);
         		}
@@ -72,7 +72,7 @@ public class floyd{
 
     public static void mostarUnVertice(int[][] dis, int[][] pre, int[] vector, int k){
     	System.out.println();
-        System.out.println("Esta viendo el vértice " + vector[k]);
+        System.out.println("Esta viendo el vertice " + vector[k]);
         for (int i = 0; i < dis.length; i++) {
             		System.out.println( vector[k] + "->" + vector[i] + " => " + dis[k][i]);
         		}
