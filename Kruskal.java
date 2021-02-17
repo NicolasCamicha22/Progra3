@@ -32,7 +32,8 @@ public class Kruskal {
 		System.out.println("=========");
 		
 		
-		kruskal(grafo).mostrarMatriz();
+		//kruskal(grafo).mostrarMatriz();
+		kruskal(grafo).ImprimirKruskal();
 		
 		
 	}

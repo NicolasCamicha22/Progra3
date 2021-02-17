@@ -170,4 +170,22 @@ public class GrafoDinamic implements GrafosTDA {
 		return null;
 	}
 
+
+	public void ImprimirKruskal() {
+		
+		NodoGrafo auxiliar = nodo;
+		NodoArista arista;
+		while(auxiliar != null) {
+		System.out.print("Nodo: "+ auxiliar.valor );
+		arista = auxiliar.lista;
+			while(arista != null) {
+				
+				System.out.print( " al nodo: "  + arista.apunta.valor +" Costo: " + arista.peso + "\t");
+				arista = arista.sig;
+			}
+			System.out.println();
+			auxiliar = auxiliar.sig;
+		}
+	}
+
 }
