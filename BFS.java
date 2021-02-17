@@ -7,14 +7,14 @@ public class BFS {
 		GrafoDinamic grafoBFS = new GrafoDinamic();
 		grafoBFS.inicializarGrafo(10);
 		
-		// Agregamos los vertices del Grafo
+		// Agregamos los vértices del Grafo
 		grafoBFS.agregarVertice(1);
 		grafoBFS.agregarVertice(2);
 		grafoBFS.agregarVertice(3);
 		grafoBFS.agregarVertice(4);
 		grafoBFS.agregarVertice(5);
 		grafoBFS.agregarVertice(6);
-		// Agregamos las aristas del Grafo
+		// Agregamos las arístas del Grafo
 		grafoBFS.agregarArista(4, 1, 1);
 		grafoBFS.agregarArista(1, 4, 1);
 		grafoBFS.agregarArista(2, 3, 1);
@@ -27,7 +27,7 @@ public class BFS {
 		grafoBFS.agregarArista(4, 5, 1);
 		
 	    System.out.println("-----------------------");
-	    System.out.println("Grafo con sus adyasencias");
+	    System.out.println("Grafo con sus adyacencias");
 		grafoBFS.mostrarMatriz();
 	    System.out.println("-----------------------");
 		Scanner scan = new Scanner(System.in);
@@ -69,7 +69,7 @@ public class BFS {
 		}				
 	}
 	
-	public static void mostrarCamino(ArrayList camino){
+	public static void mostrarCamino(ArrayList<Integer> camino){
 	    for(int i=0;i<camino.size();i++) {
 		  System.out.print(camino.get(i));
 		  if (i!=camino.size()-1) {
