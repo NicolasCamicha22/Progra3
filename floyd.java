@@ -8,7 +8,7 @@ public class floyd{
         int[][] resultado;
         int[] vector = {0,1,2,3,4,5};
 
-        //Crear la matriz de adyacencia
+        /*Crear la matriz de adyacencia*/
         int[][] matriz = new int[vector.length][vector.length];
         final short N = Short.MAX_VALUE;
         matriz[0] = new int[]{ 0, 24,  N,  N,  N, 28};

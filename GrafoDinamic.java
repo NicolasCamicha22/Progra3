@@ -179,7 +179,7 @@ public class GrafoDinamic implements GrafosTDA {
 		arista = auxiliar.lista;
 			while(arista != null) {
 				
-				System.out.print( " al nodo: "  + arista.apunta.valor +" Costo: " + arista.peso + "\t");
+				System.out.print( " Al nodo: "  + arista.apunta.valor +" Costo: " + arista.peso + "\t");
 				arista = arista.sig;
 			}
 			System.out.println();

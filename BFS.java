@@ -7,14 +7,14 @@ public class BFS {
 		GrafoDinamic grafoBFS = new GrafoDinamic();
 		grafoBFS.inicializarGrafo(10);
 		
-		// Agregamos los vertices del Grafo
+		//Agregamos los vertices del Grafo
 		grafoBFS.agregarVertice(1);
 		grafoBFS.agregarVertice(2);
 		grafoBFS.agregarVertice(3);
 		grafoBFS.agregarVertice(4);
 		grafoBFS.agregarVertice(5);
 		grafoBFS.agregarVertice(6);
-		// Agregamos las aristas del Grafo
+		//Agregamos las aristas del Grafo
 		grafoBFS.agregarArista(4, 1, 1);
 		grafoBFS.agregarArista(1, 4, 1);
 		grafoBFS.agregarArista(2, 3, 1);
