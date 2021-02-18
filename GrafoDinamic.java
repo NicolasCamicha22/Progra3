@@ -1,5 +1,4 @@
 package TP_Progra3;
-
 public class GrafoDinamic implements GrafosTDA {
 	NodoGrafo nodo;
 	int cantidad;
@@ -67,7 +66,7 @@ public class GrafoDinamic implements GrafosTDA {
 			aux.sig = encontrarNodo(v1).lista;
 			encontrarNodo(v1).lista = aux; 
 		}else {
-			System.out.println("No existe alguino de los noods");
+			System.out.println("No existe alguno de los nodos");
 		}
 	}
 	
